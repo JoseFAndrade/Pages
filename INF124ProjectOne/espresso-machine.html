@@ -7,11 +7,11 @@
   <meta name="author" content="">
   <meta name="description" content="description of your page">
   <!-- you would link to an external stylesheet here! -->
-  <link href="./style.css" type="text/css" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One%7CNoto+Sans" rel="stylesheet">
   <script src="form.js"></script>
 
-  <title>Chemex</title>
+  <title>Expresso Machine</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
 
       <div class="ItemPage">
-        <h1>Chemex </h1>
+        <h1>Expresso Machine </h1>
       </div>
 
       <div class="ItemPage">
@@ -34,72 +34,71 @@
          <table class="table-of-variety">
              <tr>
                  <!-- sources for pics 
-                  https://www.chemexcoffeemaker.com/six-cup-classic-series-coffeemaker.html
+                   https://www.amazon.com/Gaggia-14101-Semi-Automatic-Pannarello-Cappuccino/dp/B0001KOA4Q
                  -->
-                 <td> <img src="chemex-bodum.png" alt=""> <p>Item Code: CH1 $43.50 dollars</p> </td>
+                 <td> <img src="Images/espresso-machine.jpg" alt=""> <p>Item Code: EM1 $449 dollars</p> </td>
              </tr>
          </table>
         </div>
 
-
       <div class="form">
+
         <form action="mailto:youremail@uci.edu" method="post" enctype="text/plain" name="OrderForm" onsubmit="return checkform()">
           <fieldset>
             <legend><h2>Order Form</h2></legend>
             <label>
               Product: <select name="product">
-                <option value="Chemex: CH1" selected="selected">Chemex - CH1</option>
+                <option value="Expresso Machine: EM1" selected="selected">Expresso Machine - EM1</option>
               </select>
             </label>
             <p><h2>Shipping Information</h2></p>
             <label>
-              First Name: <input type="text" id="First name" name="firstName">
+            First Name: <input type="text" id="First name" name="firstName">
             </label>
             <label>
-              Last Name: <input type="text" id="Last name" name="lastName"> 
+            Last Name: <input type="text" id="Last name" name="lastName"> 
             </label>
-            <label for="email">
-              Email: <input type="email" id="Email" name="email"></label>
+            <label for="email">Email: <input type="email" id="Email" name="email"></label>
             <br><br>
             <label>
-              Address Line 1: <input type="text" id="Shipping address" name="street" size="40">
+            Address Line 1: <input type="text" id="Shipping address" name="street" size="40">
             </label>
             <label>
-              Phone Number: <input type="tel" id="Phone number" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" size="12"><br>
-              <small style="margin-left:119px">Street address, P.O. box, company name, c/o</small>
-              <small style="margin-left:131px">Format: 012-345-6789</small><br>
+            Phone Number: <input type="tel" id="Phone number" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" size="12"><br>
+            <small style="margin-left:119px">Street address, P.O. box, company name, c/o</small>
+            <small style="margin-left:131px">Format: 012-345-6789</small><br>
             </label>
             <br>
             <label>
-              Address Line 2: <input type="text" id="Shipping address 2" name="street2" size="40"><br>
-              <small style="margin-left:119px">Apartment, suite, unit, building, floor, etc.</small>
+            Address Line 2: <input type="text" id="Shipping address 2" name="street2" size="40"><br>
+            <small style="margin-left:119px">Apartment, suite, unit, building, floor, etc.</small>
             </label>
             <br><br>
             <label>
-              City: <input type="text" id="City name" name="city">
+            City: <input type="text" id="City name" name="city">
             </label>
             <label>
-              State: <input type="text" id="State code" name="state" minlength="2" maxlength="2" size="2">
+            State: <input type="text" id="State code" name="state" minlength="2" maxlength="2" size="2">
             </label>
             <label>
-              Zip Code: <input type="text" id="Zip code" name="zip" minlength="5" maxlength="5" size="5">
+            Zip Code: <input type="text" id="Zip code" name="zip" minlength="5" maxlength="5" size="5">
             </label>
             <br><br>
             <label>
-              Quantity: <select name="qty" style="margin-right:30px">
+            Quantity: <select name="qty" style="margin-right:30px">
               <option value="1" selected="selected">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
-              </select>
+            </select>
             </label>
             <label>
-              Shipping Speed:
-              <input type="radio" id="overnight" name="speed" value="overnight" checked="checked">
-              <label for="overnight">Overnight</label><br>
-              <input type="radio" id="expedited" name="speed" value="expedited" style="margin-left:293px">
-              <label for="expedited">2-Days Expedited</label><br>
-              <input type="radio" id="ground" name="speed" value="ground" style="margin-left:293px">
-              <label for="ground">6-Days Ground</label>
+            Shipping Speed:
+            <input type="radio" id="overnight" name="speed" value="overnight" checked="checked">
+            <label for="overnight">Overnight</label><br>
+            <input type="radio" id="expedited" name="speed" value="expedited" style="margin-left:293px">
+            <label for="expedited">2-Days Expedited</label><br>
+            <input type="radio" id="ground" name="speed" value="ground" style="margin-left:293px">
+            <label for="ground">6-Days Ground</label>
             </label><br>
 
             <p><h2>Payment Information</h2></p>
@@ -114,6 +113,7 @@
           </fieldset>
         </form>
       </div>
+
 
 </body>
 </html>

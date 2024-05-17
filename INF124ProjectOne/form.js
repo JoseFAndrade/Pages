@@ -3,24 +3,24 @@ function checkform() {
     var inputs = document.OrderForm.getElementsByTagName("input");
     for(var i=0; i< inputs.length; ++i) {
                 
-        if(inputs[i].value == "" && !(inputs[i].name == "street2")){
+        if(inputs[i].value === "" && !(inputs[i].name === "street2")){
             alerts+= (inputs[i].id + " is empty." +'\n');
         } 
 
-        if((inputs[i].name == "state" || inputs[i].name == "city") && (!inputs[i].value == "") && (!checkLetter(inputs[i].value))){
+        if((inputs[i].name === "state" || inputs[i].name === "city") && (!inputs[i].value === "") && (!checkLetter(inputs[i].value))){
             alerts+=(inputs[i].id + " must be letters only" + '\n');
         }
 
-        if((inputs[i].name == "zip" || inputs[i].name == "card num" || inputs[i].name == "CVC") && (!inputs[i].value == "") && (!checkNum(inputs[i].value))){
+        if((inputs[i].name === "zip" || inputs[i].name === "card num" || inputs[i].name === "CVC") && (!inputs[i].value === "") && (!checkNum(inputs[i].value))){
             alerts+=(inputs[i].id + " must be numbers only" + '\n');
         }
 
-        if((inputs[i].name == "expire") && (!inputs[i].value == "") && (!checkExpire(inputs[i].value))){
+        if((inputs[i].name === "expire") && (!inputs[i].value === "") && (!checkExpire(inputs[i].value))){
             alerts+=(inputs[i].id + " invalid" + '\n');
         }
     }
  
-    if(alerts!=""){
+    if(alerts!==""){
         alert(alerts);
         return false;
     }
