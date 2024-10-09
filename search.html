@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="searchEngine.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
@@ -8,7 +9,11 @@
 
 <div>
   <h1 class = "center"> Search bar for units</h1>
-  <input type = "text" placeholder="Search...">
+  <input id="page-search-input" type = "text" placeholder="Search..." onkeyup="test()" >
+  <h2> Results</h2>
+    <ul class = "personaResults">
+
+    </ul>
 </div>
 </body>
 </html>
